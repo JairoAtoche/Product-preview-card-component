@@ -1,0 +1,29 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.button {
+    width: 100%;
+    min-height: 48px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--dark-cyan);
+    color: var(--white);
+
+    @include mixins.caja-flex(row,center,center);
+
+    font-size: 14.5px;
+    font-family: var(--family-montserrat);
+    font-weight: #{map-get(variables.$weight, bolder)};
+    transition-duration: .5s;
+    
+    &__svg {
+        margin-right: 11px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #1A4031;
+    }
+}

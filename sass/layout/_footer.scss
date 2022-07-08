@@ -1,0 +1,12 @@
+.footer {
+    &__attribution { 
+    text-align: center;
+    color: var(--very-dark-blue); 
+    }
+    &__p {
+        font-size: 12px; 
+    }
+    &__a {
+        color: var(--dark-cyan); 
+    }
+}
