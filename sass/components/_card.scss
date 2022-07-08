@@ -40,6 +40,9 @@
         
         &-container {
             min-height: 100%;
+            @include mixins.desktop() {
+                width: 50%;
+            }
         }
     }
     &__content-container {
